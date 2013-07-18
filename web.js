@@ -5,6 +5,8 @@ var app = express.createServer(express.logger());
 
 var resultBuffer;
 
+app.use(express.static(__dirname+'/public'));
+
 app.get('/', function(request, response) {
   result = fs.readFileSync('index.html', 'utf-8')
   response.send(result);

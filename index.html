@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>My First Bitstarter</title>
+    <title>Armongo.db Fundraiser</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="//d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
     <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="/css/bitstarter.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800">
-    <script src="//d396squsza40orc.cloudfront.net/startup%2Fcode%2fjquery.js"></script>
-    <script src="//d396squsza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
   </head>
   <body>
     <!-- Mobile friendly navbar adapted from example. -->
@@ -42,12 +42,12 @@
     <div class="container">
       <div class="row-fluid heading">
         <div class="span12">
-          <h1>Product</h1>
+          <h1>Armongo.db</h1>
         </div>
       </div>
       <div class="row-fluid subheading">
         <div class="span12">
-          <p class="lead">One sentence description.</p>
+          <p class="lead">A node.js module integrating the World of Warcraft API with MongoDB</p>
         </div>
       </div>
       <div class="row-fluid pitch">
@@ -64,7 +64,7 @@
               </div>
               <div class="span4">
                 <div class="linediv-c">
-                  <h3>$6,000</h3><p> of $10,000</p> 
+                  <h3>$0</h3><p>of $2,000</p> 
                 </div>
               </div>
               <div class="span4">
@@ -100,16 +100,13 @@
           <img class="img-polaroid" src="//placehold.it/480x300">
         </div>
         <div class="span5 copy">
-          <p>Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Twitter spock hulu woopra hipmunk ngmoco xobni kiko meebo oooj spock ideeli appjet meebo plickers imvu, ngmoco kazaa kosmix jabber napster boxbe mozy sococo eduvant tumblr cotweet convore zinch twitter wufoo. Revver empressr kno dopplr quora prezi unigo oooj mobly kosmix mobly groupon, lanyrd akismet plickers foodzie fleck voxy gsnap kippt eduvant yammer gooru, chegg zlio plaxo hipmunk etsy tivo balihoo zoosk gsnap chumby. Jibjab udemy diigo woopra plaxo quora kazaa, scribd zimbra qeyno jajah zimbra. Boxbe kaboodle revver ngmoco blekko jumo babblely, glogster qeyno meevee elgg. </p>
-          <p>Dropio voxy mobly reddit octopart knewton tumblr, akismet jaiku bitly meebo wesabe. Foodzie joyent trulia prezi zillow cloudera chartly yuntaa, sococo bebo wufoo meevee napster doostang, unigo greplin handango vuvox imeem whrrl. Jaiku glogster reddit heekya doostang jabber lala sococo airbnb imvu revver appjet, napster sclipo kaboodle foodzie reddit greplin quora unigo chegg lijit airbnb, hipmunk chartly hulu diigo ngmoco chumby handango zynga glogster babblely. Mobly skype doostang jabber vuvox blippy weebly klout bebo, oooj zappos chumby joukuu chartly eduvant jajah, kiko wufoo squidoo divvyshot kiko heekya zinch. </p>
+	<p>Blizzard offers one of the best APIs for website and application developers available today, with just about everything you could want available for free, reasonable traffic limits, and easy registration for large scale projects.  There's even <a href="//us.battle.net/wow/en/forum/topic/2369882588?page=1">a massive list</a> of api implementations for just about every possible programing language.  So why on earth do we need one more?</p>
         </div>
       </div>
       <div class="row-fluid section2">
         <div class="span5 offset1 copy copy-right">
-          <p>Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Twitter spock hulu woopra hipmunk ngmoco xobni kiko meebo oooj spock ideeli appjet meebo plickers imvu, ngmoco kazaa kosmix jabber napster boxbe mozy sococo eduvant tumblr cotweet convore zinch twitter wufoo. Revver empressr kno dopplr quora prezi unigo oooj mobly kosmix mobly groupon, lanyrd akismet plickers foodzie fleck voxy gsnap kippt eduvant yammer gooru, chegg zlio plaxo hipmunk etsy tivo balihoo zoosk gsnap chumby. Jibjab udemy diigo woopra plaxo quora kazaa, scribd zimbra qeyno jajah zimbra. Boxbe kaboodle revver ngmoco blekko jumo babblely, glogster qeyno meevee elgg. </p>
-
-          <p>Dropio voxy mobly reddit octopart knewton tumblr, akismet jaiku bitly meebo wesabe. Foodzie joyent trulia prezi zillow cloudera chartly yuntaa, sococo bebo wufoo meevee napster doostang, unigo greplin handango vuvox imeem whrrl. Jaiku glogster reddit heekya doostang jabber lala sococo airbnb imvu revver appjet, napster sclipo kaboodle foodzie reddit greplin quora unigo chegg lijit airbnb, hipmunk chartly hulu diigo ngmoco chumby handango zynga glogster babblely. Mobly skype doostang jabber vuvox blippy weebly klout bebo, oooj zappos chumby joukuu chartly eduvant jajah, kiko wufoo squidoo divvyshot kiko heekya zinch.</p>
-        </div>
+	<p>I've been working on an idea for a Warcraft related website, and it struck me that <a href="//www.mongodb.org/">MongoDB</a> was a perfect match for the JSON data returned by the Blizzard API.  And since I wanted to add a local cache of the chracter data (even Blizzard's servers can't be up all of the time) and to abstract things like checking Last Modified headers, embedding character data in user records, and the like, this project was born.
+	</div>
         <div class="span5 asset">
           <img class="img-polaroid" src="//placehold.it/480x300">
         </div>
@@ -119,21 +116,52 @@
         <div class="span10 offset1">
           <h3>FAQ</h3>
           <div class="accordion" id="accordion2">
+          <div class="accordion-group">
+           <div class="accordion-heading">
+             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">What would the money to be used for?</a>
+           </div>
+           <div id="collapseOne" class="accordion-body collapse">
+             <div class="accordion-inner">To buy me time, basically.  I have a number of expenses that I can't put off any longer--car repairs, and a fancy new matress, mostly--that I'll probably track down some freelance jobs to take care of them, which will keep me from working on this project, and the one it's supposed to power.</div>
+           </div>
+         </div><!-- accordion-group -->
             <div class="accordion-group">
               <div class="accordion-heading">
-                <a class="accordion-toggle" data-toggle="collapse" data-parent="accorion2" href="#collapseOne">What does FAQ stand for?</a>
+                <a class="accordion-toggle" data-toggle="collapse" data-parent="accorion2" href="#collapseTwo">Do you really expect to get any donations?</a>
               </div>
-              <div id="collapseOne" class="accordion-body collapse">
-                <div class="accordion-inner">Frequently Asked Question</div>
+              <div id="collapseTwo" class="accordion-body collapse">
+                <div class="accordion-inner">Nope. This site is being developed and deployed as part of the <a href="//class.coursera.org/startup-001/class">Coursera Startup Engineering</a> course.  The idea of course is to work on your pitch for (and maybe even fund) a fancy project that will make you rich in a hurry.  And I have a few of those ideas, but not the time to dedicate to them right now, so I thought I'd throw this project out there.  That said, I'd totally take any funds that were donated, so feel free to click the button if you want to help out.</div>
               </div>
            </div>
-         </div>
          <div class="accordion-group">
            <div class="accordion-heading">
-             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">What's a Frequently Asked Question?</a>
+             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">Why not just take the plunge and try a big project?</a>
            </div>
-           <div id="collapseTwo" class="accordion-body collapse">
-             <div class="accordion-inner">A question which is commonly asked by users.</div>
+           <div id="collapseThree" class="accordion-body collapse">
+             <div class="accordion-inner">I have a family member with a chronic health issue.  While it's under control and slowly getting better, a life without health insurance and a reliable income are not in my near term future.</div>
+           </div>
+         </div><!-- accordion-group -->
+         <div class="accordion-group">
+           <div class="accordion-heading">
+             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour">Can I contribute code?</a>
+           </div>
+           <div id="collapseFour" class="accordion-body collapse">
+             <div class="accordion-inner">I'd love to have help with the code.  As soon as I have something resembling a working framework, I'll publish a link to the github repository.</div>
+           </div>
+         </div><!-- accordion-group -->
+         <div class="accordion-group">
+           <div class="accordion-heading">
+             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive">What's your professional background?</a>
+           </div>
+           <div id="collapseFive" class="accordion-body collapse">
+             <div class="accordion-inner">I do website QA and usability for a large internet retailer, and am starting to branch out into programming.</div>
+           </div>
+         </div><!-- accordion-group -->
+         <div class="accordion-group">
+           <div class="accordion-heading">
+             <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix">I have some other question.</a>
+           </div>
+           <div id="collapseSix" class="accordion-body collapse">
+             <div class="accordion-inner">Note to self, put some contact information here.  And a damn footer, so that there's space at the bottom of the page.</div>
            </div>
          </div><!-- accordion-group -->
        </div>
